@@ -1,5 +1,6 @@
 # Proxmox-Pve-Backup
-The bash script creates a backup of the important files for a complete restore of the proxmoxnode/host.
+The bash script creates a backup of the important files for a complete restore of the proxmoxnode/host, the backup server needs to run the script.
+Therefore it uses ssh/scp and a ssh private key, you need to create a **ssh key pair** first to run the script and set the **destination** path on the backupserver.
 ## Path `/etc`
 This path includes all nessaccery files like network config, pve directories and so on, in a case of a restore, you need to pick specific files and restore these, because configuration is alwys diffrent from setup to setup
 ## Path `/root`
